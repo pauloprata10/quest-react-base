@@ -1,7 +1,11 @@
 import React from 'react'
 
-const Text = ({ texto }) => {
-  return <p style={{color: 'red'}}>{texto.toUpperCase()}</p>
+const Text = ({ texto, color }) => {
+  return <p className="texto" style={{color}}>{texto.toUpperCase()}</p>
+}
+
+Text.defaultProps = {
+  color: 'red'
 }
 
 export { Text }
