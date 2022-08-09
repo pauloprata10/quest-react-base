@@ -1,14 +1,14 @@
 import React from 'react'
 import './button.css'
 
-const sayQuest = () => {
-  alert('Desafio 2 da Quest React Base')
+const sayButtonLabel = (label) => {
+  alert(label)
 }
 
-const Button = props => {
+const Button = ({ label }) => {
   return (
-    <button className="btn" onClick={sayQuest}>
-      {props.label}
+    <button className="btn" onClick={() => sayButtonLabel(label)}>
+      {label}
     </button>
   )
 }
@@ -17,4 +17,4 @@ Button.defaultProps = {
   label: 'Clique aqui'
 }
 
-export default Button
+export { Button }

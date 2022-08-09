@@ -1,12 +1,13 @@
-import Text from './components/text/text'
-import Button from './components/button/button'
+import { Text } from './components/text/text'
+import { Button } from './components/button/button'
 
 function App() {
   return (
-    <div className="text">
-      <Text title="Base React - Desafio 1 e 2" />
+    <>
+      <Text texto="O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web." />
+
       <Button />
-    </div>
+    </>
   )
 }
 
