@@ -1,20 +1,18 @@
 import React from 'react'
 import './button.css'
 
-const sayButtonLabel = (label) => {
-  alert(label)
+const sayButtonLabel = label => {
+  alert('A label desse botão é Baixar CV')
 }
 
-const Button = ({ label }) => {
-  return (
-    <button className="btn" onClick={() => sayButtonLabel(label)}>
-      {label}
-    </button>
-  )
-}
+const Button = ({ label }) => (
+  <button label="CV" className="btn" onClick={() => sayButtonLabel(label)}>
+    {label}
+  </button>
+)
 
 Button.defaultProps = {
-  label: 'Clique aqui'
+  label: 'Baixar CV'
 }
 
 export { Button }
